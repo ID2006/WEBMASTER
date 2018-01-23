@@ -1,9 +1,15 @@
+html {
+    height: 100%;
+}
 #indexbody {
     background-image: url(images/DSC_6249_edit2.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-color: black;
-    background-position: right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 #schoolbody {
     display: flex;
@@ -22,8 +28,8 @@
 }
 #introcontain {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     margin-left: 20px;
     height: 100%;
     width: 40%;
@@ -40,7 +46,7 @@
     color: white;
     font-family: "Neutraface", sans-serif;
     font-weight: 700;
-    font-size: 60;
+    font-size: 60px;
 }
 a:link, a:hover, a:visited, a:active {
     text-decoration: none;

@@ -90,6 +90,12 @@ a:link, a:hover, a:visited, a:active {
     font-weight: 600;
     font-size: 18px;
 }
+.buttonbackground {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    height: 80px;
+}
 #intro {
     height: auto;
     width: 23%;

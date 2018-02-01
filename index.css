@@ -1,7 +1,12 @@
 #indexbody {
-    background-image:url(SPLASH.jps);
+    background-image: url(SPLASH.jps);
+    background-repeat: no-repeat;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    margin: auto;
+    height: 100%;
 }
 #personalbody {
     background-image: url(backgroundmain.jps);
@@ -47,7 +52,15 @@
     padding: none;
     list-style: none;
     color: white;
-
+}
+#introbox {
+    display: flex;
+    width: 28%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-self: center;
 }
 .linksplit {
     display: flex;
@@ -75,12 +88,14 @@ a:link, a:hover, a:visited, a:active {
     margin-left: 10px;
 }
 #middle {
+    display: flex;
+    flex-direction: row-reverse;
     height: 200%;
     width: 100%;
     color: white;
 }
 #AI {
-    height: 200%;
+    height: auto;
     width: auto;
     font-size: 200px;
     font-family: "Helvetica", sans-serif;
@@ -92,18 +107,16 @@ a:link, a:hover, a:visited, a:active {
 }
 #intro {
     height: auto;
-    width: 23%;
+    width: auto;
     text-align: justify;
     margin-right: 20px;
 }
 #introcontain {
     display: flex;
-    width: auto;
+    align-items: center;
+    width: 100%;
     height: 100%;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    align-self: center;
 }
 #footgroup {
     display: flex;
@@ -163,4 +176,16 @@ h2 {
     height: 200px;
     width: 45%;
     background-color: white;
+}
+#links_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 188px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: white;
 }

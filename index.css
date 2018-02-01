@@ -115,7 +115,7 @@ a:link, a:hover, a:visited, a:active {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     flex-direction: row;
 }
 #footgroup {
@@ -188,4 +188,13 @@ h2 {
     padding: 0px;
     list-style: none;
     color: white;
+}
+button, input[type="submit"], input[type="reset"] {
+    background: none !important;
+    color: inherit;
+    border: none;
+    padding: 0! important;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
 }

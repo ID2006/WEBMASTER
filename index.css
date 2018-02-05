@@ -218,3 +218,8 @@ button, input[type="submit"], input[type="reset"] {
     cursor: pointer;
     outline: inherit !important;
 }
+@media only screen and (max-width: 991px) {
+    #personalbody {
+        background-image: url(school/images/DSC_2817.JPG);
+    }
+}

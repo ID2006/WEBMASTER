@@ -38,7 +38,7 @@
     height: auto;
     width: 100%;
     background-color: none;
-    align-content: flex-start;
+    align-content: space-around;
     justify-content: center;
 }
 #links {
@@ -67,6 +67,8 @@
     width: 2px;
     height: 80px;
     background-color: white;
+    margin: 0px;
+    padding: 0px;
 }
 a:link, a:hover, a:visited, a:active {
     text-decoration: none;
@@ -105,11 +107,23 @@ a:link, a:hover, a:visited, a:active {
     font-weight: 600;
     font-size: 18px;
 }
-.buttonbackground {
+.linkol {
     display: flex;
-    align-items: center;
-    background-color: aqua;
     height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.linkol a:hover {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: deeppink;
+    width: 100%;
 }
 #intro {
     height: auto;

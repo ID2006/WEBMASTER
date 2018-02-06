@@ -170,7 +170,6 @@ a:link, a:hover, a:visited, a:active {
     height: 100px;
     width: 100%;
     background-color: white;
-    background-image: url(textbackimage.png);
 }
 .headlinetext {
     font-size: 80px;

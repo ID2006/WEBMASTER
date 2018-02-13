@@ -2,14 +2,15 @@ html {
     height: 100%;
 }
 #indexbody {
+    display: flex;
+    flex-direction: column;
     background-image: url(images/DSC_6249_edit2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
 }
 #schoolbody {
     display: flex;
@@ -247,4 +248,15 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.schoolsec {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f2;
+    width: 70%;
+    height: auto;
+    margin-bottom: 2%;
+}
+.collapsing {
+    visibility: collapse;
 }

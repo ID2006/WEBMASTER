@@ -12,7 +12,6 @@
                     $("#sec1right").css("visibility", "collapse");
                     $("#sec1").css("height", "300px");
                     $("#f1").show();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec1").mouseenter(function(){
@@ -20,7 +19,6 @@
                     $("#sec1right").css("visibility", "visible");
                     $("#sec1").css("height", "auto");
                     $("#f1").hide();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec2").mouseleave(function(){
@@ -28,7 +26,6 @@
                     $("#sec2").css("height", "300px");
                     $("#sec2").css("flex-direction", "row");
                     $("#f2").show();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec2").mouseenter(function(){
@@ -36,15 +33,13 @@
                     $("#sec2").css("height", "auto");
                     $("#sec2").css("flex-direction", "column");
                     $("#f2").hide();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec3").mouseleave(function(){
                     $("#sec3left").css("visibility", "collapse");
                     $("#sec3right").css("visibility", "collapse");
                     $("#sec3").css("height", "300px");
-                    $("#f3").show();
-                    $("body").css("height", "auto");
+                    $("#f3").show();;
                 });
 
                 $("#sec3").mouseenter(function(){
@@ -52,7 +47,6 @@
                     $("#sec3right").css("visibility", "visible");
                     $("#sec3").css("height", "auto");
                     $("#f3").hide();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec4").mouseleave(function(){
@@ -61,7 +55,6 @@
                     $("#sec4").css("flex-direction", "row");
                     $("#sec4").css("height", "300px");
                     $("#f4").show();
-                    $("body").css("height", "auto");
                 });
 
                 $("#sec4").mouseenter(function(){
@@ -70,7 +63,6 @@
                     $("#sec4").css("flex-direction", "row");
                     $("#sec4").css("height", "auto");
                     $("#f4").hide();
-                    $("body").css("height", "auto");
                 });
 
                 var menu = $("linkcontain"),

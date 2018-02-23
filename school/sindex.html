@@ -7,6 +7,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
+                $(".schoolsec").css("height", "300px")
+
                 $("#sec1").mouseleave(function(){
                     $("#sec1left").css("visibility", "collapse");
                     $("#sec1right").css("visibility", "collapse");
@@ -14,12 +16,13 @@
                     $("#f1").show();
                 });
 
-                $("#sec1").mouseenter(function(){
+                $("#sec1").hover(function(){
                     $("#sec1left").css("visibility", "visible");
                     $("#sec1right").css("visibility", "visible");
-                    $("#sec1").css("height", "auto");
                     $("#f1").hide();
+                    $("#sec1").animate({height: "auto"});
                 });
+
 
                 $("#sec2").mouseleave(function(){
                     $("#majorcontain").css("visibility", "collapse");
@@ -30,7 +33,7 @@
 
                 $("#sec2").mouseenter(function(){
                     $("#majorcontain").css("visibility", "visible");
-                    $("#sec2").css("height", "auto");
+                    $("#sec2").animate("height", "auto");
                     $("#sec2").css("flex-direction", "column");
                     $("#f2").hide();
                 });
@@ -45,7 +48,7 @@
                 $("#sec3").mouseenter(function(){
                     $("#sec3left").css("visibility", "visible");
                     $("#sec3right").css("visibility", "visible");
-                    $("#sec3").css("height", "auto");
+                    $("#sec3").animate("height", "auto");
                     $("#f3").hide();
                 });
 
@@ -61,7 +64,7 @@
                     $("#sec4left").css("visibility", "visible");
                     $("#sec4right").css("visibility", "visible");
                     $("#sec4").css("flex-direction", "row");
-                    $("#sec4").css("height", "auto");
+                    $("#sec4").animate("height", "auto");
                     $("#f4").hide();
                 });
 
@@ -148,7 +151,7 @@ vellecum aut apic tem quame ducipsu ndenia consequae volum
 que peribeate nonsequ isiminvendae este nones quam ni cus
 alique sam quuntis et velento ruptas est qui te que latur?</p>
                 </div>
-                    <img src="images/_DSC0647_edit.jpg" id="sec3right" class="collapsing">
+                <img src="images/_DSC0647_edit.jpg" id="sec3right" class="collapsing">
             </div>
             <div id="sec4" class="schoolsec">
                 <p class="fronttext" id="f4">STEM CURRICULUM</p>

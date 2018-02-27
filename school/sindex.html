@@ -8,10 +8,11 @@
         <script>
             $(document).ready(function(){
                 var Height1 = $("#sec1").css('height', 'auto').height(),
-                    Height2 = $("#sec2").css('height', 'auto').height(),
+                    Height2 = $("#majorcontain").css('height', 'auto').height(),
                     Height3 = $("#sec3").css('height', 'auto').height(),
                     Height4 = $("#sec4").css('height', 'auto').height(),
-                    Height5 = $("#majorcontain").css('height', 'auto').height();
+                    Height5 = $("#majorcontain").css('height', 'auto').height(),
+                    Height6 = $(".imagesize").css('height', 'auto').height();
 
                 $(".schoolsec").css("height", "300px")
 
@@ -39,8 +40,7 @@
 
                 $("#sec2").mouseenter(function(){
                     $("#majorcontain").css("visibility", "visible");
-                    $("#majorcontain").css("height", "auto");
-                    $("#sec2").animate({height: Height2});
+                    $("#sec2").animate({height: '100%'});
                     $("#sec2").css("flex-direction", "column");
                     $("#f2").hide();
                 });

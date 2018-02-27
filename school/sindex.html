@@ -7,6 +7,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
+                var Height1 = $("#sec1").css('height', 'auto').height(),
+                    Height2 = $("#sec2").css('height', 'auto').height(),
+                    Height3 = $("#sec3").css('height', 'auto').height(),
+                    Height4 = $("#sec4").css('height', 'auto').height(),
+                    Height5 = $("#majorcontain").css('height', 'auto').height();
+
                 $(".schoolsec").css("height", "300px")
 
                 $("#sec1").mouseleave(function(){
@@ -16,11 +22,11 @@
                     $("#f1").show();
                 });
 
-                $("#sec1").hover(function(){
+                $("#sec1").mouseenter(function(){
                     $("#sec1left").css("visibility", "visible");
                     $("#sec1right").css("visibility", "visible");
                     $("#f1").hide();
-                    $("#sec1").animate({height: "auto"});
+                    $("#sec1").animate({height: Height1});
                 });
 
 
@@ -33,7 +39,8 @@
 
                 $("#sec2").mouseenter(function(){
                     $("#majorcontain").css("visibility", "visible");
-                    $("#sec2").animate("height", "auto");
+                    $("#majorcontain").css("height", "auto");
+                    $("#sec2").animate({height: Height2});
                     $("#sec2").css("flex-direction", "column");
                     $("#f2").hide();
                 });
@@ -48,7 +55,7 @@
                 $("#sec3").mouseenter(function(){
                     $("#sec3left").css("visibility", "visible");
                     $("#sec3right").css("visibility", "visible");
-                    $("#sec3").animate("height", "auto");
+                    $("#sec3").animate({height: Height3});
                     $("#f3").hide();
                 });
 
@@ -64,7 +71,7 @@
                     $("#sec4left").css("visibility", "visible");
                     $("#sec4right").css("visibility", "visible");
                     $("#sec4").css("flex-direction", "row");
-                    $("#sec4").animate("height", "auto");
+                    $("#sec4").animate({height: Height4});
                     $("#f4").hide();
                 });
 
@@ -116,27 +123,36 @@ em ium volo occae vellic tet, tem nam eveni cum quiderchil eaqui opti dist, con 
                 <div id="majorcontain" class="collapsing">
                     <h3>MAJORS</h3>
                     <div id="imagecontain">
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_4555_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_4555_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_4740_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_4740_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_5164_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
-                        </div>
-                    </div>
-                    <div id="imagecontain">
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_0119_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
-                        </div>
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_0177_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
-                        </div>
-                        <div class="imagesize"><img class="majorpics" src="images/theatre_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_5164_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
                     </div>
                     <div id="imagecontain">
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_1047_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_0119_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_3628_major.jpg"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_0177_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
-                        <div class="imagesize"><img class="majorpics" src="images/DSC_0412_major.JPG"><div class="hoverdesc"><p>descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p></div>
+                        <div class="imagesize"><img class="majorpics" src="images/theatre_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
+                        </div>
+                    </div>
+                    <div id="imagecontain">
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_1047_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
+                        </div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_3628_major.jpg">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
+                        </div>
+                        <div class="imagesize"><img class="majorpics" src="images/DSC_0412_major.JPG">
+                        <p class="imagewords">descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc</p>
                         </div>
                     </div>
                 </div>
